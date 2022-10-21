@@ -74,14 +74,15 @@
   li {
     margin: 1em 0em;
   }
+      
+  .hostname { color: #FAA19B; font-size: 150%; }
   </style>
 </head>
 <body id="sample">
   <div class="textColumn">
     <h1>Congratulations!!</h1>
     <p>You have successfully created an Azure web application using a bash script.</p>
-      <p>Your server is:</p> 
-      <h2><!--# echo var="hostname" default="unknown_host" --></h2>
+      <p>Your server is: <span class="hostname"><!--# echo var="hostname" default="unknown_host" --></span></p>
     <p>Automation is AWESOME!</p>
   </div>
   
